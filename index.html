@@ -16,18 +16,23 @@
   <body>
     <header></header>
     <main>
+
       <div class="panel panel-default">
         <div class="panel-heading">Rock Paper Scissors</div>
         <div class="panel-body">
+          <div class="container-fluid">
           <div class="row">
-            <div class="col">
-              <div class="btn btn-light">Rock</div>
-              <div class="btn btn-light">Paper</div>
-              <div class="btn btn-light">Scissor</div>
+            <div class="col-12 button-choice">
+              <h2>Selection</h2>
+              <div class="btn btn-light" onclick="play()">Rock</div>
+              <div class="btn btn-light" onclick="play()">Paper</div>
+              <div class="btn btn-light" onclick="play()">Scissor</div>
             </div>
-            <div class="col" id="gameResult">
+            <div class="col-12" id="gameResult">
               <h3>RESULT</h3>
+              <p>result</p>
             </div>
+          </div>
           </div>
         </div>
       </div>
