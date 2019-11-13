@@ -28,14 +28,16 @@ function play(playerChoice) {
   let computerChoice = "rock";
 
   let results = selections.find(
-    selection => selection.type.toLowerCase() == playerChoice.toLowerCase()
+    s => s.type.toLowerCase() == playerChoice.toLowerCase()
   );
+debugger;
+  document.querySelector("#gameResult").innerHTML = `
+  <h4>${results.type}</h4>
+  <p>${results.status}</p>`;
 
-  document.querySelector("#gameResult").innerHTML = `<p>${results.status}`;
 
 
 
-  
 //   if (playerChoice.toLowerCase() == computerChoice) {
 //     document.querySelector("#gameResult").innerHTML = `
 // <p>${results.status}</p>`;
