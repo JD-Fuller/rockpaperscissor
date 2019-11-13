@@ -4,11 +4,61 @@ h1 {
   text-align: center;
 }
 
-.button-choice, h2,{
+.panel-heading {
+  background: rgb(255, 93, 96);
+  font-size: 30pt;
+  font-family: "Press Start 2P";
+  color: white;
+}
+.button-choice, .panel-heading {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Press Start 2P";
+
+}
+
+.button-choice {
+  margin: 1em;
+}
+
+.results h4 {
+  font-size: 3.5rem;
+}
+.results p {
+  font-size: 1.5rem;
 }
 h2 {
-  color: red
+  color: grey;
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+.result-row {
+  justify-content: center;
+  font-family: "Press Start 2P";
+}
+.result-box {
+ border: 3px solid rgba(158, 161, 163, 0.61);
+ margin: 2em;
+ padding: 1em 0 4em 0;
+ text-align: center;
+ box-shadow: -10px 10px rgb(255, 93, 96);
+}
+
+.results {
+  margin-top: 2em;
+}
+hr {
+  justify-content: left;
+  margin: 0;
+  height: 1px;
+  color: rgb(67, 67, 68);
+}
+
+.btn {
+  background: grey;
+  border-radius: 9%;
+  color: white;
+  cursor: pointer;
+  font-family: "Press Start 2P";
 }
