@@ -33,11 +33,16 @@ h2 {
   font-family: "Press Start 2P";
   text-align: center;
 }
-.result-row {
+.result-row1 {
   justify-content: center;
   font-family: "Press Start 2P";
 }
-.result-box {
+.result-row2 {
+  justify-content: center;
+  font-family: "Press Start 2P";
+}
+
+.result-box1 {
  border: 3px solid rgba(158, 161, 163, 0.61);
  margin: 2em;
  padding: 1em 0 4em 0;
@@ -62,3 +67,14 @@ hr {
   cursor: pointer;
   font-family: "Press Start 2P";
 }
+
+.scoreboard {
+  flex-direction: row;
+}
+.result-row2 .result-box2{
+    border: 3px solid rgba(158, 161, 163, 0.61);
+    margin: 2em;
+    padding: 1em 0 4em 0;
+    text-align: center;
+    box-shadow: -10px 10px rgb(116, 113, 113);
+   }
