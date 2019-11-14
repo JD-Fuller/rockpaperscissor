@@ -15,7 +15,6 @@ h1 {
   align-items: center;
   text-align: center;
   font-family: "Press Start 2P";
-
 }
 
 .button-choice {
@@ -48,8 +47,11 @@ h2 {
  padding: 1em 0 4em 0;
  text-align: center;
  box-shadow: -10px 10px rgb(255, 93, 96);
+ height: 20vh;
 }
-
+.result-box1 hr {
+  margin: 0 1em 0 1em;
+}
 .results {
   margin-top: 2em;
 }
@@ -68,13 +70,41 @@ hr {
   font-family: "Press Start 2P";
 }
 
+.btn-refresh {
+  background: rgb(146, 143, 143);
+  border-radius: 9%;
+  color: white;
+  cursor: pointer;
+  font-family: "Press Start 2P";
+}
+
 .scoreboard {
   flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
 }
+
 .result-row2 .result-box2{
     border: 3px solid rgba(158, 161, 163, 0.61);
     margin: 2em;
     padding: 1em 0 4em 0;
     text-align: center;
     box-shadow: -10px 10px rgb(116, 113, 113);
+    justify-content: center;
+    padding: 1.5em 3em 1.5em 3em;
    }
+
+.result-box2 {
+    height: 14vh;
+   }
+.scoreboard h3 {
+  width: 30vh;
+}
+.col-2 {
+  margin-top: .5em;
+}
+
+.new-game {
+  text-align: center;
+  padding: 4em 0 0 0;
+}

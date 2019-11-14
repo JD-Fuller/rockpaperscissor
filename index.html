@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Architects+Daughter|Archivo+Black|Bangers|Fredoka+One|Gloria+Hallelujah|Knewave|Permanent+Marker|Press+Start+2P|Reenie+Beanie|Rock+Salt|Special+Elite&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Architects+Daughter|Archivo+Black|Bangers|Fredoka+One|Gloria+Hallelujah|Knewave|Permanent+Marker|Press+Start+2P|Reenie+Beanie|Rock+Salt|Special+Elite&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
   <title>RockPaperScissors</title>
@@ -40,23 +42,31 @@
               </div>
             </div>
           </div>
-            <div class="row d-flex result-row2">
-                <div class="col-6 result-box2">
-                  <h2>SCOREBOARD</h2>
-                  <hr>
-                  </hr>
-                  <div class="scoreboard" id="gameScore">
-                    <h4>Win</h4>
-                    <hr></hr>
-                    <p>win</p>
-                    <h4>Tie</h4>
-                    <hr></hr>
-                    <p>tie</p>
-                    <h4>Loss</h4>
-                    <hr></hr>
-                    <p>loss</p>
-                  </div>
+          <div class="row d-flex result-row2 result-box2">
+            <div class="col-6 result-box2">
+              <h2>SCOREBOARD</h2>
+              <hr>
+              </hr>
+              <div class="row scoreboard d-flex">
+                <div class="col-2 win">
+                  <h4 id="win">Wins</h4>
+                  <p></p>
                 </div>
+                <div class="col-2 tie">
+                  <h4 id="tie">Ties</h4>
+                  <p></p>
+                </div>
+                <div class="col-2 lose">
+                  <h4 id="lose">Loses</h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <div class="col-12 new-game">
+              <div class="btn btn-refresh" value="New Game" onclick="document.location.reload(true)">NEW GAME</div>
+            </div>
           </div>
         </div>
       </div>

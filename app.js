@@ -26,8 +26,9 @@ var score = {
   wins: 0, 
   ties: 0, 
   losses: 0,
-  add: function(event){if(event = "win") { this.wins += 1;} else if (event = "lose") {this.losses +=1} else {this.ties +=1;}}
 }
+
+
 
 let computerSelection = [
   "rock", "paper", "scissor"
@@ -48,37 +49,78 @@ let computerChoice = computerSelection[Math.floor(Math.random()*computerSelectio
   if (playerChoice.toLowerCase() == computerChoice) {
     document.querySelector("#gameResult").innerHTML = `
     <h4>${results.type}</h4>
-<p>${results.tie}</p>`;
-    score.ties++
-  } else if (playerChoice.toLowerCase() == "scissor" && computerChoice == "rock") {
+    <p>${results.tie}</p>`
+console.log("tie");
+// Add in score if there is a tie
+    score.ties++;
+    console.log(score.ties);
+    document.querySelector("#tie").innerHTML = `
+    <h4>Ties</h4>
+<p>${score.ties}</p>`;
+    
+  } 
+  
+  else if (playerChoice.toLowerCase() == "scissor" && computerChoice == "rock") {
     document.querySelector("#gameResult").innerHTML = `
     <h4>${results.type}</h4>
-<p>${results.lose}</p>`;
+    <p>${results.lose}</p>`;
+score.losses++;
+document.querySelector("#lose").innerHTML = `
+<h4>Loses</h4>
+<p>${score.losses}</p>`;
 }
-else if (playerChoice.toLowerCase() == "scissor" && computerChoice == "paper") {
+
+  else if (playerChoice.toLowerCase() == "scissor" && computerChoice == "paper") {
  document.querySelector("#gameResult").innerHTML = `
- <h4>${results.type}</h4>
-<p>${results.win}</p>`;
+    <h4>${results.type}</h4>
+    <p>${results.win}</p>`;
+score.wins++;
+document.querySelector("#win").innerHTML = `
+<h4>Wins</h4>
+<p>${score.wins}</p>`;
 }
- else if (playerChoice.toLowerCase() == "paper" && computerChoice == "rock") {
+ 
+else if (playerChoice.toLowerCase() == "paper" && computerChoice == "rock") {
   document.querySelector("#gameResult").innerHTML = `
-  <h4>${results.type}</h4>
-<p>${results.win}</p>`;
+    <h4>${results.type}</h4>
+    <p>${results.win}</p>`;
+score.wins++;
+document.querySelector("#win").innerHTML = `
+<h4>Wins</h4>
+<p>${score.wins}</p>`;
 }
-else if (playerChoice.toLowerCase() == "paper" && computerChoice == "scissor") {
+
+
+  else if (playerChoice.toLowerCase() == "paper" && computerChoice == "scissor") {
     document.querySelector("#gameResult").innerHTML = `
     <h4>${results.type}</h4>
-<p>${results.lose}</p>`;
+    <p>${results.lose}</p>`;
+score.losses++;
+document.querySelector("#lose").innerHTML = `
+<h4>Loses</h4>
+<p>${score.losses}</p>`;
 }
-else if (playerChoice.toLowerCase() == "rock" && computerChoice == "paper") {
+
+
+  else if (playerChoice.toLowerCase() == "rock" && computerChoice == "paper") {
  document.querySelector("#gameResult").innerHTML = `
- <h4>${results.type}</h4>
-<p>${results.lose}</p>`;
+    <h4>${results.type}</h4>
+    <p>${results.lose}</p>`;
+score.losses++;
+document.querySelector("#lose").innerHTML = `
+<h4>Loses</h4>
+<p>${score.losses}</p>`;
 }
-else if (playerChoice.toLowerCase() == "rock" && computerChoice == "scissor") {
+
+
+  else if (playerChoice.toLowerCase() == "rock" && computerChoice == "scissor") {
   document.querySelector("#gameResult").innerHTML = `
-  <h4>${results.type}</h4>
- <p>${results.win}</p>`;
+    <h4>${results.type}</h4>
+    <p>${results.win}</p>`;
+ score.wins++;
+ document.querySelector("#win").innerHTML = `
+ <h4>Wins</h4>
+<p>${score.wins}</p>`;
  }
 }
 
